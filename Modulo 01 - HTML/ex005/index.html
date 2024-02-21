@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formatações</title>
+</head>
+
+<body>
+	<!--EXERCÍCIO 05: PRÉ-FORMATAÇÃO + CITAÇÃO + Texto Invertido (Ínutil KKKKK)-->
+	<h1>Outras Formatações</h1>
+	<h2>Código-fonte e Pré-formatação</h2>
+	<p>
+		O comando <code>document.getElement('teste')</code> é escrito em linguagem JavaScript. Para escrever codigos utilizamos a tag <strong><code>&lt;code&gt;</code></strong>.
+	</p>
+	<!--
+		A tag <pre> considera todos os espaçamentos e tabulações do que estiver dentro dele
+	-->
+	<pre>
+		<code>
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+	print(f'O número {num} é PAR!')
+else
+	print(f'O número {num} é IMPAR!')
+print('FIM DO PROGRAMA')
+		</code>
+	</pre>
+	<h2>Citações</h2>
+	<p>
+		Como diriam os programadores: <q>O computador é um burro muito rápido.</q>
+	</p>
+	<p>Segundo Fábio Flatschart, no seu livro HTML 5 - Embarque Imediato:</p>
+	<blockquote cite="https://www.google.com.br/books/edition/HTML_5_Embarque_Imediato/_cgsCgAAQBAJ?hl=pt-BR&gbpv=1">
+		API(Application Programming Interface) é uma interface que permite a integração entre os softwares, facilitando sua integração de maneira semelhante a uma interface que auxilia na comunicaçãp entre nós usuários, e os diversos dispositivos com os quais convivemos no nosso dia a dia. 
+	</blockquote>
+	<h2>Abreviações</h2>
+	<p>
+		Estou estudando <abbr title="Hiper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando.
+	</p>
+	<h2>Texto Invertido</h2>
+	<p>
+		<bdo dir="ltr"> Da esquerda para direita</bdo> e <bdo dir=rtl> da direita para esquerda</bdo>.
+	</p>
+</body>
+</html>

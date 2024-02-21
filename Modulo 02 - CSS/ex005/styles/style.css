@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: Apple;
+	src: url(../fonts/AppleGaramond.ttf) format(truetype), 
+	url(../fonts/AppleGaramond-Bold.ttf) format(truetype), 
+	url(../fonts/AppleGaramond-Italic.ttf) format(truetype),
+	url(../fonts/AppleGaramond-BoldItalic.ttf) format(truetype), 
+	url(../fonts/AppleGaramond-Light.ttf) format(truetype),
+	url(../fonts/AppleGaramond-LightItalic.ttf) format(truetype);
+}
+
+@font-face {
+	font-family: Billie;
+	src: url(../fonts/BillieEilish.ttf) format(truetype), 
+	url(../fonts/BillieEilish.otf) format(opentype);
+}
+
+body {
+	font-family: Apple, serif;
+	background-color: #1D594E;
+	font-size: 1.2em;
+	margin: 0px;
+}
+
+header {
+	background-color: #FFF;
+	padding: 10px;
+	margin: 10px;
+}
+
+nav {
+	background-color: #F28705;
+	box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 315);
+}
+
+nav > a {
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+	display: inline-block;
+	padding: 10px;
+	width: 100px;
+	text-align: center;
+}
+
+nav > a:hover {
+	background-color: #1D594E;
+	text-decoration: underline;
+	color: #F2CB05;
+}
+
+main {
+	background-color: #FFF;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 0px 15px;
+	box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 325);
+}
+
+footer {
+	background-color: #F28705;
+	color: #FFF;
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+}
+
+footer > p {
+	margin: 0px;
+}
+
+article {
+	background-color: #F2CB05;
+	padding: 20px;
+	margin: 10px;
+}
+
+article > aside {
+	background-color: #1D594E;
+	color: #F2CB05;
+	text-align: right;
+	padding: 4px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+h1 {
+	font: normal bold 2.8em Billie;
+	color: #F28705;
+	box-shadow: inset 0px 0px 8px 4px rgba(0, 0, 0, 400);
+	text-align: center;
+}
+
+
+h2 {
+	font: normal bold 1.8em Billie;
+	color: #1D594E;
+	margin: 0;
+}

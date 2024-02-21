@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Links</title>
+		<style>
+			/*
+				# = id
+				. = class
+				: = pseudo-class
+				:: = pseudo-element
+				> = children
+			*/
+
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+			@font-face {
+				font-family: Cyberlink;
+				src: url(fonts/cyborgpunk.ttf) format(truetype);
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			body {
+				font: normal 1em Roboto, Arial, Sans-serif;
+				background-color: #60A6A6;
+				color: #1A2620;
+			}
+
+			h1{
+				font-family: Cyberlink, 'Trebuchet MS', Monospace;
+			}
+
+			li:hover {
+				color: #D94A4A;
+			}
+
+			a:link {
+				color: #D94A4A;
+				font-weight: 500;
+				text-decoration: none;
+			}
+
+			a:visited {
+				color: #2A3E40;
+			}
+
+			a:hover {
+				color: #1A2620;
+				text-decoration: underline;
+			}
+
+			a:active {
+				color: #D94A4A;
+			}
+
+			a::before {
+				content: '\21DB';
+				text-decoration: none;
+				font-weight: normal;
+				color: #97C4C4;
+			}
+
+			a::after {
+				content: '\21DA';
+				text-decoration: none;
+				font-weight: normal;
+				color: #97C4C4;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Personalizando Links</h1>
+		<ul>
+			<li>
+				<a href="https://www.youtube.com/" target="_blank" rel="external">
+					Youtube
+				</a>
+			</li>
+			<li>
+				<a href="https://www.google.com" target="_blank" rel="external">
+					Google
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com" target="_blank" rel="external">
+					Facebook
+				</a>
+			</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="imagens/icones/favicon.ico" type="image/x-ico">
+		<title>Fontes Externas</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+			@font-face {
+				font-family: London;
+				src: url(fontes/OldLondon.ttf) format(truetype), url(fontes/OldLondon.otf) format(opentype);
+				/* Tipos de Formatos:
+					- opentype(otf);
+					- truetype(ttf);
+					- embedded-opentype
+					- truetype-aat (Apple Advanced Typography);
+					- svg
+				*/
+				font-weight: normal;
+				font-style: normal;
+			}
+
+
+			body {
+				font: normal normal 1em 'Open Sans', Helvetica, Sans-serif;
+			}
+
+			h1 {
+				font-family: London, Times, Serif;
+				font-size: 3em;
+			}
+
+			h2 {
+				font-family: London, Times, Serif;;
+				font-size: 2em;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Titulo 01</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</body>
+</html>

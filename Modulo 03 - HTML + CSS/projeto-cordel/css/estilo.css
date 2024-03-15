@@ -7,12 +7,6 @@
 }
 
 @font-face {
-	font-family: 'Passion One';
-	src: local('Passion One'), url('../fontes/PassionOne-Regular.ttf') format('truetype');
-	font-weight: normal;
-}
-
-@font-face {
 	font-family: 'Passion One Bold';
 	src: local('Passion One Bold'), url('../fontes/PassionOne-Bold.ttf') format('truetype');
 	font-weight: bold;

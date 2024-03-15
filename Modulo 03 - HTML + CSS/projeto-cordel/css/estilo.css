@@ -1,0 +1,128 @@
+@charset 'UTF-8';
+
+@font-face {
+	font-family: 'Sriracha';
+	src: local('Sriracha'), url('../fontes/Sriracha-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Passion One';
+	src: local('Passion One'), url('../fontes/PassionOne-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Passion One Bold';
+	src: local('Passion One Bold'), url('../fontes/PassionOne-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+:root {
+	--fonte-padrao: Verdana, Geneva, Tahoma, Sans-serif;
+	--fonte-titulo: 'Passion One Bold', Cursive;
+	--fonte-poesia: 'Sriracha', Cursive;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+}
+
+html, body {
+	min-height: 100vh;
+	font-family: var(--fonte-padrao);
+}
+
+header {
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+}
+
+header > h1 {
+	font-family: var(--fonte-titulo);
+	padding-top: 50px;
+	/*text-transform: uppercase;*/
+	font-variant: small-caps;
+	font-size: 10vw;
+}
+
+header > p {
+	padding-bottom: 50px;
+}
+
+header a, footer a {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+	text-decoration: underline;
+}
+
+section {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	padding-left: 30px;
+	line-height: 2em;
+	font-family: var(--fonte-poesia);
+	font-size: 3.5vw;
+}
+
+section p {
+	padding-bottom: 2em;
+}
+
+section.normal {
+	background-color: #FFF;
+	color: #000;
+}
+
+section.imagem {
+	color: #FFF;
+	box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.470);
+}
+
+section.imagem > p {
+	background-color: rgba(0, 0, 0, 0.500);
+	text-shadow: 1px 1px 0px #000;
+	display: inline-block;
+	padding: 5px;
+}
+
+section#img01 {
+	/*
+	background-color: rgb(51, 51, 51);
+	background-image: url('../imagens/background001.jpg');
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: cover;
+	background-attachment: fixed;
+	*/
+
+	background: rgb(51, 51, 51) url('../imagens/background001.jpg') no-repeat right center / cover fixed;
+}
+
+section#img02 {
+	/*
+	background-color: rgb(51, 51, 51);
+	background-image: url('../imagens/background002.jpg');
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: cover;
+	background-attachment: cover;
+	background-attachment: fixed;
+	*/
+	background: rgb(51, 51, 51) url('../imagens/background002.jpg') no-repeat right center / cover fixed;
+}
+
+footer {
+	background-color: #000;
+	text-align: center;
+	color: #FFF;
+	padding: 10px;
+}
+

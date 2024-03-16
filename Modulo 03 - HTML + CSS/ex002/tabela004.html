@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabelas</title>
+	<style type='text/css'>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 400px;
+		}
+
+		caption {
+			font-size: 1.3em;
+			font-weight: bold;
+			padding: 8px;
+		}
+
+		th, td {
+			border: 1px solid #000;
+			padding: 8px;
+		}
+
+		col#nome {
+			background-color: yellow;
+		}
+
+		col#sexo {
+			background-color: red;
+		}
+
+		col#idade {
+			background-color: green;
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>Exercício de Tabela</h1>
+
+	<table>
+		<colgroup>
+			<col id='nome'>
+			<col id='sexo'>
+			<col id='idade' span='2'>
+			<col id='prof'>
+		</colgroup>
+
+		<caption>Cadastro</caption>
+
+		<thead>
+			<tr>
+				<th scope='col'>Nome</th>
+				<th scope='col'>Sexo</th>
+				<th scope='col'>Idade</th>
+				<th scope='col'>Profissão</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>Ana</td>
+				<td>F</td>
+				<td>25</td>
+				<td>Jornalista</td>
+			</tr>
+
+			<tr>
+				<td>Matheus</td>
+				<td>M</td>
+				<td>22</td>
+				<td>Analista</td>
+			</tr>
+
+			<tr>
+				<td>Amanda</td>
+				<td>F</td>
+				<td>20</td>
+				<td>Estudante</td>
+			</tr>
+
+			<tr>
+				<td>Jair</td>
+				<td>M</td>
+				<td>48</td>
+				<td>Representante</td>
+			</tr>
+
+			<tr>
+				<td>Kátia</td>
+				<td>F</td>
+				<td>38</td>
+				<td>Artista</td>
+			</tr>
+
+			<tr>
+				<td>Francisco</td>
+				<td>M</td>
+				<td>68</td>
+				<td>Professor</td>
+			</tr>
+
+			<tr>
+				<td>Ramon</td>
+				<td>M</td>
+				<td>27</td>
+				<td>Engenheiro</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

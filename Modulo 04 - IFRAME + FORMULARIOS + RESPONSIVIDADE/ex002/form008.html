@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário</title>
+</head>
+<body>
+	<h1>Lelementos output em formulários</h1>
+	<form action='cadastro.php' method='GET' autocomplete='on'>
+		<p>
+			<label for='in1'>Número 1:</label>
+			<input type='number' name='n1' id='in1' min='0' max='50' required oninput='isoma.innerHTML = Number(in1.value) + Number(in2.value)'>
+		</p>
+
+		<p>
+			<label for='in2'>Número 2:</label>
+			<input type='number' name='n2' id='in2' min='0' max='50' required oninput='isoma.innerHTML = Number(in1.value) + Number(in2.value)'>
+		</p>
+
+		<p>
+			<label for='isoma'>Soma:</label>
+			<!--O output mostra um dado na tela, porém ao dar submit ele não envia nada-->
+			<output name='soma' id='isoma'>0</output>
+		</p>
+
+		<p>
+			<input type='reset' name='limpar' id='ilimpar' value='Limpar'>
+			<input type='submit' name='enviar' id='ienviar' value='Enviar'>
+		</p>
+	</form>
+</body>
+</html>

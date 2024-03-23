@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/*---------Estilo da Tela-----------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: #F2E3D5;
+}
+
+header {
+	background-image: linear-gradient(to bottom, #026773, #012E40);
+	box-shadow: 0px 0px 3px 2px #000;
+}
+
+header > h1 {
+	text-align: center;
+	padding: 50px;
+	color: #FFF;
+	font-weight: bolder;
+	text-shadow: 1px 1px 2px #000;
+}
+
+menu > ul > li {
+	display: inline;
+	text-align: center;
+	list-style: none;
+}
+
+menu a {
+	display: inline-block;
+	width: 90px;
+	padding: 10px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	transition-duration: 0.5s;
+}
+
+menu a:hover {
+	background-color: #026773;
+	border-radius: 5px;
+	color: #012E40;
+}
+
+main {
+	width: 60vw;
+	height: 70vh;
+	margin: auto;
+	background-color: #FFF;
+	box-shadow: 0px 1px 4px 1px #000;
+	margin-top: 2px;
+
+}
+
+main h2 {
+	padding: 20px 0px 10px 10px;
+	color: #026773;
+	text-shadow: 1px 0px 2px #000;
+}
+
+main > article > p {
+	padding: 10px;
+	text-align: justify;
+}
